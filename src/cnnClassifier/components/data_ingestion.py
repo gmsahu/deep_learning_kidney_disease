@@ -1,9 +1,10 @@
 import os
+import shutil
 import zipfile
 import gdown
-from src.cnnClassifier import logger
-from src.cnnClassifier.utils.common import get_size
-from src.cnnClassifier.entity.config_entity import (DataIngestionConfig)
+from cnnClassifier import logger
+from cnnClassifier.utils.common import get_size
+from cnnClassifier.entity.config_entity import (DataIngestionConfig)
 
 
 
@@ -44,3 +45,12 @@ class DataIngestion:
         os.makedirs(unzip_path, exist_ok=True)
         with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
             zip_ref.extractall(unzip_path)
+
+        macosx_path = os.path.join(unzip_path, '__MACOSX')
+    
+       # Remove the __MACOSX directory if it exists
+        if os.path.exists(macosx_path):
+            shutil.rmtree(macosx_path)
+            print(f"Removed {macosx_path}")
+        else:
+             print(f"{macosx_path} not found, nothing to remove")    

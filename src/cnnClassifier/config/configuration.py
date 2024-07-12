@@ -1,7 +1,7 @@
-from src.cnnClassifier.constants import *
+from cnnClassifier.constants import *
 import os
-from src.cnnClassifier.utils.common import read_yaml, create_directories,save_json
-from src.cnnClassifier.entity.config_entity import (DataIngestionConfig,
+from cnnClassifier.utils.common import read_yaml, create_directories,save_json
+from cnnClassifier.entity.config_entity import (DataIngestionConfig,
                                                    PrepareBaseModelConfig,
                                                    TrainingConfig,
                                                    EvaluationConfig)
@@ -62,7 +62,7 @@ class ConfigurationManager:
         training = self.config.training
         prepare_base_model = self.config.prepare_base_model
         params = self.params
-        training_data = os.path.join(self.config.data_ingestion.unzip_dir, "kidney-ct-scan-image")
+        training_data = os.path.join(self.config.data_ingestion.root_dir, "kidney-ct-scan-image")
         create_directories([
             Path(training.root_dir)
         ])
