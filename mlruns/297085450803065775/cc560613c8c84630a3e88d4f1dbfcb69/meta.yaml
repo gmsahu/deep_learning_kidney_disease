@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/gayatrimanjarisahu/mlproject/kidney_disease/mlruns/297085450803065775/cc560613c8c84630a3e88d4f1dbfcb69/artifacts
+end_time: 1720761332344
+entry_point_name: ''
+experiment_id: '297085450803065775'
+lifecycle_stage: active
+run_id: cc560613c8c84630a3e88d4f1dbfcb69
+run_name: respected-shrew-785
+run_uuid: cc560613c8c84630a3e88d4f1dbfcb69
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1720761331277
+status: 4
+tags: []
+user_id: gayatrimanjarisahu

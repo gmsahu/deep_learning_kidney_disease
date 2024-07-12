@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/gayatrimanjarisahu/mlproject/kidney_disease/mlruns/297085450803065775/822c5688fd0c4085b85cbff461d590fc/artifacts
+end_time: 1720761704208
+entry_point_name: ''
+experiment_id: '297085450803065775'
+lifecycle_stage: active
+run_id: 822c5688fd0c4085b85cbff461d590fc
+run_name: clumsy-fowl-569
+run_uuid: 822c5688fd0c4085b85cbff461d590fc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1720761703697
+status: 4
+tags: []
+user_id: gayatrimanjarisahu
